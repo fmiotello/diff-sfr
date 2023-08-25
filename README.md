@@ -18,6 +18,7 @@ After you prepared own data, you need to modify the corresponding configure file
 2. Run the script:
 
 ```python
+cd src
 python run.py -p train -c config/sfr.json
 ```
 
@@ -27,6 +28,7 @@ python run.py -p train -c config/sfr.json
 2. Set your model path following the steps in **Resume Training** part.
 3. Run the script:
 ```python
+cd src
 python run.py -p test -c config/sfr.json
 ```
 
