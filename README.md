@@ -4,6 +4,7 @@
 
 The code in this repository is mainly inspired by [**Palette: Image-to-Image Diffusion Models**](https://github.com/Janspiry/Palette-Image-to-Image-Diffusion-Models).
 After you prepared own data, you need to modify the corresponding configure file to point to your data.
+The data generation script is taken from [Lluis](https://github.com/francesclluis/sound-field-neural-network/tree/master/create_dataset)
 
 ### Training/Resume Training
 
@@ -34,6 +35,6 @@ python run.py -p test -c config/sfr.json
 
 ## Main changes wrt original Palette implementation
 
-* `dataset.py` - creation of sound field dataset, starting from frequency responses of rooms
+* `dataset.py` - creation of sound field dataset, starting from frequency responses of rooms (here you can set the number of mics for each room)
 * `mask.py` - random masking of the sound fields, based on the numebr of available mics
 * `metric.py` - added nmse metric
